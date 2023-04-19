@@ -7,7 +7,7 @@ import prefetch from "@astrojs/prefetch";
 
 // https://astro.build/config
 export default defineConfig({
-	site: "https://www.astro-theme-cactus.netlify.app/",
+	site: "https://cactus.paulapplegate.com/",
 	markdown: {
 		shikiConfig: {
 			theme: "dracula",
@@ -22,6 +22,7 @@ export default defineConfig({
 			},
 		}),
 		image({
+      format: ['AVIF', 'WEBP'],
 			serviceEntryPoint: "@astrojs/image/sharp",
 		}),
 		sitemap(),
