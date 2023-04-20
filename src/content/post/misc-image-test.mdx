@@ -1,0 +1,12 @@
+---
+title: "An iPhone14 Pic"
+publishDate: "19 April 2023"
+description: "A great example of an iPhone photo. Looks great. Amazing."
+tags: ["demo", "blog", "cool"]
+---
+
+import { Picture } from '@astrojs/image/components';
+
+<Picture src={import("src/assets/images/iPhone_Pic.jpeg")} widths={[100, 200, 400, 800, 1600]} sizes="(max-width: 1600px) 100vw, 1600px" alt="an iPhone14  pic" />
+
+A test post.
