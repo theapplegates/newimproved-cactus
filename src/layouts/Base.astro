@@ -17,6 +17,30 @@ const {
 
 <html lang={siteConfig.lang}>
 	<head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css" />
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.js"></script>
+
+  <script type="text/javascript">
+
+  algoliasearchNetlify({
+
+  appId: '5LBRPA6BW2',
+
+  apiKey: '86134572464c1b07480add1f97deabac',
+
+  siteId: '5113a0b5-0a9f-42b1-9676-8d7221551fc6',
+
+  branch: 'main',
+
+  selector: 'div#search',
+
+  });
+
+  </script>
+
+
+  <div id="search"></div>
 		<BaseHead title={title} description={description} ogImage={ogImage} articleDate={articleDate} />
 		<script define:vars={{ siteConfig }}>
 			const root = document.documentElement;
